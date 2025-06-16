@@ -1,0 +1,28 @@
+### Get all spaceships
+GET http://localhost:5000/api/v1/spaceships
+
+### Create new spaceship
+POST http://localhost:5000/api/v1/spaceships
+Content-Type: application/json
+
+{
+    "name": "Enterprise",
+    "type": "combat"
+}
+
+### Create mission
+POST http://localhost:5000/api/v1/missions
+Content-Type: application/json
+
+{
+    "name": "Mars Exploration",
+    "goal": "research"
+}
+
+### Add ship to mission
+POST http://localhost:5000/api/v1/missions/1/add_ship
+Content-Type: application/json
+
+{
+    "spaceship_id": 1
+}
