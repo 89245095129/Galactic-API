@@ -10,15 +10,17 @@ REST API для управления операциями межзвездног
 
 Полноценный RESTful интерфейс
 
-Установка
+Установка:
 bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate    # Windows
 pip install -r requirements.txt
-Запуск
+
+Запуск:
 bash
 flask run
+
 Документация API
 Описание конечных точек API доступно в API_DOCS.md
 
@@ -30,6 +32,7 @@ flask run
 ini
 FLASK_APP=app.py
 FLASK_ENV=development
+
 Тестирование
 Для тестирования API можно использовать:
 
